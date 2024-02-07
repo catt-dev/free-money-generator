@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤑 Genertor Darmowej Kasy 🤑</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #ffccff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        #generateButton {
+            padding: 20px 40px;
+            font-size: 24px;
+            cursor: pointer;
+            background-color: #ff6666;
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            transition: background-color 0.5s ease, transform 0.5s ease;
+        }
+        #generateButton:hover {
+            background-color: #ff3333;
+            transform: scale(1.2) rotate(15deg);
+        }
+        #result {
+            display: none;
+            margin-top: 20px;
+            background-color: #ffcc99;
+            border: 2px solid #ff9966;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(255, 102, 102, 0.5);
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="color: #ff3333;">FREE MONEY GENEREJTOR</h1>
+    <p style="color: #ff6666;">Kliknij ponirzej aby pżestadź byci bjedakiem!!1! (no scam)</p>
+
+    <button id="generateButton" onclick="generateMoney()">Zdobońdź forse</button>
+
+    <div id="result">
+        <p style="color: #ff9966;">Haha nie ma tak łatfo w rzyciu!!!1! Haha dales sie nabraci hahahhahaha.</p>
+    </div>
+
+    <script>
+        function generateMoney() {
+            document.getElementById("generateButton").style.display = "none";
+            document.getElementById("result").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
